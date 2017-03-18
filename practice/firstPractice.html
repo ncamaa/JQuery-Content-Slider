@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> a simple jquery slider by Nadav Cohen</title>
+    <style>
+      .red{color:red;}
+      .green{color:green;};
+    </style>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function()
+        {
+          /*
+          $('.myLink').on('mouseenter', function()
+          {
+            $('h1').addClass('red');
+          });
+          $('.myLink').on('mouseleave', function()
+          {
+            $('h1').removeClass('red');
+          });
+          */
+          $('.myLink').click(function()
+          {
+            $('h1').append('<h2> Whops! </h2>');
+            $('h1').prepend('<h4> Yooopido </h4>');
+            $('h1').css('font-size', '8px')
+          });
+
+
+
+        });
+    </script>
+
+  </head>
+  <body>
+    <h1> Welcome Everyone</h1>
+    <a href='#' class="myLink">Click Me</a>
+  </body>
+</html>
